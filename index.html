@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="headText">
+            {Bookshelf}<span>Apps Drian</span>
+        </h1>
+    </header>
+    <main>
+        <section class="inputNewBook glass">
+            <form action="" id="formInput">
+                <h2>Masukan Buku Baru</h2>
+                <div class="input">
+                    <label for="inputJudul">Judul</label>
+                    <input type="text" id="inputJudul" required>
+                </div>
+                <div class="input">
+                    <label for="inputPenulis">Penulis</label>
+                    <input type="text" id="inputPenulis" required>
+                </div>
+                <div class="input">
+                    <label for="inputTahun">Tahun</label>
+                    <input type="date" id="inputTahun" required>
+                </div>
+                <div class="inputDone">
+                    <input type="checkbox" name="" id="inputSudahDibaca">
+                    <label for="inputSudahDibaca">Sudah di baca</label>
+                </div>
+                <button type="submit" id="addBook">Tambah list buku</button>
+            </form>
+        </section>
+        <!-- <section class="searchSection glass">
+            <form action="" id="formSearch">
+                <h2>Cari buku (Berdasarkan judul)</h2>
+                <input type="text" id="searchBookJudul" placeholder="Cari...." onkeyup="">
+                <button type="submit" id="searchButton">Cari</button>
+            </form>
+        </section> -->
+        <section class="bukuBelumDibaca glass">
+            <h2>Buku belum selesai dibaca</h2>
+
+            <div class="listBuku" id="bookShelf">
+
+            </div>
+        </section>
+        <section class="sudahDibaca glass">
+            <h2>Buku selesai dibaca</h2>
+
+            <div class="listBuku" id="completedBooks">
+
+            </div>
+        </section>
+    </main>
+<script src="assets/main.js"></script>
+</body>
+</html>

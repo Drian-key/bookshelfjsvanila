@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    background: linear-gradient(to right, #76BA99, #ADCF9F);
+    width: 100%;
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+}
+
+header .headText{
+    color: #fff;
+    padding: 20px 0;
+    color: #FFDCAE;
+    font-size: 30px;
+}
+header .headText span{
+    color: #fff;
+    font-size: 50%;
+}
+
+main{
+    background: linear-gradient(320deg,rgba(153, 153, 153, 0.4), rgba(161, 161, 161, 0.4)), url(library.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+}
+.glass {
+    margin: 0 auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    padding: 50px;
+    border-radius: 10px;
+} 
+.glass:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(20px);
+    margin: -20px;
+}
+.glass h2{
+    color: #424242;
+    text-shadow: 2px 2px 5px #f0f0f0;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.inputNewBook .input{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+}
+.inputDone{
+    display: flex;
+    flex-direction: row;
+}
+.inputDone label{
+    margin: 5px 0 0 5px;
+}
+.glass input, .inputDone label{
+    border: none;
+    height: 25px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+}
+.inputDone label{
+    padding: 0;
+}
+.inputNewBook .input label, .inputDone label{
+    font-size: 14px;
+    color: rgb(43, 43, 43);
+    text-shadow: 2px 2px 5px #f0f0f0;
+}
+.glass input:focus{
+    outline: none;
+}
+.inputNewBook button, .searchSection button{
+    width: 100%;
+    border: none;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #FFDCAE, #76BA99);
+    color: rgb(43, 43, 43);
+    text-shadow: 2px 2px 5px #f0f0f0;
+    cursor: pointer;
+}
+.glass button:hover{
+    background: linear-gradient(to right, #C4DFAA, #F5F0BB);
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 5px #ffffff;
+}
+
+.searchSection, .bukuBelumDibaca, .sudahDibaca{
+    margin-top: 20px;
+}
+.searchSection input{
+    width: 80%;
+    height: 30px;
+}
+.searchSection button{
+    width: 19%;
+    box-sizing: border-box;
+}
+.listBuku .item{
+    background: linear-gradient(to right, #FFDCAE, #76BA99);
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.listBuku .item *{
+    color: #424242;
+}
+.checkButton {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assetsSvg/check-outline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+.checkButton:hover {
+    background: url('../assetsSvg/check-solid.svg');
+    background-size: contain;
+}
+
+.trashButton {
+    width: 40px;
+    height: 40px;
+    
+    background: url('../assetsSvg/trash-outline.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trashButton:hover {
+    background: url('../assetsSvg/trash-fill.svg');
+    background-size: contain;
+}
+
+.undoButton {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assetsSvg/undo-ouline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undoButton:hover {
+    background: url('../assetsSvg/undo-ouline.svg');
+    background-size: contain;
+}
+
+.checkButton:focus, .trashButton {
+    outline: none;
+}
