@@ -88,7 +88,14 @@ function makeShelf(bukuObject){
             addTaskToCompleted(bukuObject.id);
         });
 
-        container.append(checkButton);
+        const trashButton = document.createElement('button');
+        trashButton.classList.add('trashButton');
+
+        trashButton.addEventListener('click', () => {
+            removeTaskFromCompleted(bukuObject.id);
+        });
+
+        container.append(checkButton, trashButton);
     }
 
     return container;
